@@ -9,13 +9,13 @@
 [![Image Layers](https://img.shields.io/imagelayers/layers/yobasystems/alpine-syncthing/latest.svg)](https://imagelayers.io/?images=yobasystems/alpine-syncthing:latest)
 
 
-[This](https://hub.docker.com/r/yobasystems/alpine-syncthing/) Docker image is based on the [Alpine Linux 3.4](http://alpinelinux.org/) with version of 0.14.5 of [Syncthing](https://syncthing.net/)
+[This](https://hub.docker.com/r/yobasystems/alpine-syncthing/) Docker image is based on the [Alpine Linux 3.4](http://alpinelinux.org/) with version of 0.14.6 of [Syncthing](https://syncthing.net/)
 
 ## Features
 
   * Minimal size: 23Mb uncompressed, and only 9 layers.
   * Memory usage is minimal on a simple install.
-  * [Syncthing 0.14.5](https://syncthing.net/)
+  * [Syncthing 0.14.6](https://syncthing.net/)
 
 
 ## Creating an instance
