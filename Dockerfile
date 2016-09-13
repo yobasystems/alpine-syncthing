@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.4
 MAINTAINER Yoba Systems <dominic@yobasystems.co.uk>
 
 ENV SYNCTHING_VERSION=0.14.6 \
