@@ -1,7 +1,7 @@
 FROM alpine:3.4
 MAINTAINER Yoba Systems <dominic@yobasystems.co.uk>
 
-ENV SYNCTHING_VERSION=0.14.6 \
+ENV SYNCTHING_VERSION=0.14.7 \
     SYNCTHING_USERID=1027 \
     GOSU_VERSION=1.9 \
     STNOUPGRADE=true
