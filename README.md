@@ -2,11 +2,11 @@
 
 [![Docker Layers](https://img.shields.io/badge/docker%20layers-4-blue.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) [![Docker Size](https://img.shields.io/badge/docker%20size-8.14%20MB-blue.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) [![Docker Stars](https://img.shields.io/docker/stars/yobasystems/alpine-syncthing.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) [![Docker Pulls](https://img.shields.io/docker/pulls/yobasystems/alpine-syncthing.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
 
-[![Alpine Version](https://img.shields.io/badge/alpine%20version-v3.4-green.svg?maxAge=2592000?style=flat-square)](http://alpinelinux.org/) [![Syncthing Version](https://img.shields.io/badge/syncthing%20version-v0.14.7-green.svg?maxAge=2592000?style=flat-square)](https://syncthing.net/)
+[![Alpine Version](https://img.shields.io/badge/alpine%20version-v3.4-green.svg?maxAge=2592000?style=flat-square)](http://alpinelinux.org/) [![Syncthing Version](https://img.shields.io/badge/syncthing%20version-v0.14.8-green.svg?maxAge=2592000?style=flat-square)](https://syncthing.net/)
 
 
 
-This Docker image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](http://alpinelinux.org/) with version 0.14.7 of [Syncthing](https://syncthing.net/)
+This Docker image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](http://alpinelinux.org/) with version 0.14.8 of [Syncthing](https://syncthing.net/)
 
 ## Features
 
