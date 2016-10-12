@@ -10,9 +10,9 @@ This Docker image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yoba
 
 ## Features
 
-  * Minimal size only 8.14 MB and only 4 layers
+  * Minimal size only 8.16 MB and only 4 layers
   * Memory usage is minimal on a simple install
-  * [Syncthing 0.14.7](https://syncthing.net/)
+  * [Syncthing 0.14.8](https://syncthing.net/)
 
 
 ## Creating an instance
