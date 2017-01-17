@@ -1,9 +1,9 @@
-FROM alpine:3.4
+FROM alpine:3.5
 MAINTAINER Yoba Systems <dominic@yobasystems.co.uk>
 
-ENV SYNCTHING_VERSION=0.14.10 \
+ENV SYNCTHING_VERSION=0.14.19 \
     SYNCTHING_USERID=1027 \
-    GOSU_VERSION=1.9 \
+    GOSU_VERSION=1.10 \
     STNOUPGRADE=true
 
 RUN cd /tmp &&\
