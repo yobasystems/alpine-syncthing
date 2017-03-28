@@ -2,17 +2,25 @@
 
 [![Docker Layers](https://img.shields.io/badge/docker%20layers-4-blue.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) [![Docker Size](https://img.shields.io/badge/docker%20size-8.14%20MB-blue.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) [![Docker Stars](https://img.shields.io/docker/stars/yobasystems/alpine-syncthing.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) [![Docker Pulls](https://img.shields.io/docker/pulls/yobasystems/alpine-syncthing.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
 
-[![Alpine Version](https://img.shields.io/badge/alpine%20version-v3.5-green.svg?maxAge=2592000?style=flat-square)](http://alpinelinux.org/) [![Syncthing Version](https://img.shields.io/badge/syncthing%20version-v0.14.24-green.svg?maxAge=2592000?style=flat-square)](https://syncthing.net/)
+[![Alpine Version](https://img.shields.io/badge/alpine%20version-v3.5-green.svg?maxAge=2592000?style=flat-square)](http://alpinelinux.org/) [![Syncthing Version](https://img.shields.io/badge/syncthing%20version-v0.14.25-green.svg?maxAge=2592000?style=flat-square)](https://syncthing.net/)
 
 
 
-This Docker image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](http://alpinelinux.org/) with version 0.14.24 of [Syncthing](https://syncthing.net/)
+This Docker image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](http://alpinelinux.org/) with version 0.14.25 of [Syncthing](https://syncthing.net/)
 
 ## Features
 
   * Minimal size only 8.16 MB and only 4 layers
   * Memory usage is minimal on a simple install
-  * [Syncthing 0.14.24](https://syncthing.net/)
+  * [Syncthing 0.14.25](https://syncthing.net/)
+  * Armv7 (armhf) version with ```:armhf``` tag
+
+## Tags
+
+* ```:latest``` latest nginx & alpine
+* ```:master``` master branch usually inline with latest
+* ```:v0.0.0``` version number related to nginx version
+* ```:armhf``` Armv7 based on latest tag but arm architecture
 
 
 ## Creating an instance
