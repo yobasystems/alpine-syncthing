@@ -1,7 +1,7 @@
-FROM armhf/alpine:3.5
-MAINTAINER Yoba Systems <dominic@yobasystems.co.uk>
+FROM yobasystems/alpine:armhf
+LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="ARM32v7/armhf"
 
-ENV SYNCTHING_VERSION=0.14.25 \
+ENV SYNCTHING_VERSION=0.14.31 \
     SYNCTHING_USERID=1027 \
     GOSU_VERSION=1.10 \
     STNOUPGRADE=true
