@@ -1,7 +1,7 @@
 FROM yobasystems/alpine:amd64
-LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="AMD64/x86_64"
+LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="AMD64/x86_64" version="0.14.38"
 
-ENV SYNCTHING_VERSION=0.14.31 \
+ENV SYNCTHING_VERSION=0.14.38 \
     SYNCTHING_USERID=1027 \
     GOSU_VERSION=1.10 \
     STNOUPGRADE=true

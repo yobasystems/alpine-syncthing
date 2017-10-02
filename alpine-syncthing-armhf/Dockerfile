@@ -1,7 +1,7 @@
 FROM yobasystems/alpine:armhf
-LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="ARM32v7/armhf"
+LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="ARM32v7/armhf" version="0.14.38"
 
-ENV SYNCTHING_VERSION=0.14.31 \
+ENV SYNCTHING_VERSION=0.14.38 \
     SYNCTHING_USERID=1027 \
     GOSU_VERSION=1.10 \
     STNOUPGRADE=true
