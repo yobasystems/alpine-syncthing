@@ -31,6 +31,23 @@ arm32v7 syncthing build:
     - docker login quay.io -u $QUAY_USERNAME -p $QUAY_PASSWORD && docker push $DOCKER_REGISTRY_QUAY/$DOCKER_REGISTRY_QUAY_REPO:arm32v7
     - docker login quay.io -u $QUAY_USERNAME -p $QUAY_PASSWORD && docker push $DOCKER_REGISTRY_QUAY/$DOCKER_REGISTRY_QUAY_REPO:armhf
 
+arm64v8 syncthing build:
+  stage: yobasystems/alpine-docker:aarch64-dind
+  stage: build
+  tags:
+    - aarch64
+  script:
+    - apk add --update git
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $DOCKER_REGISTRY
+    - cd alpine-syncthing-aarch64/ && docker build -t $DOCKER_REGISTRY/$DOCKER_REGISTRY_REPO:arm64v8 -t $DOCKER_REGISTRY_DOCKERHUB_REPO:arm64v8 -t $DOCKER_REGISTRY_QUAY/$DOCKER_REGISTRY_QUAY_REPO:arm64v8 -t $DOCKER_REGISTRY/$DOCKER_REGISTRY_REPO:aarch64 -t $DOCKER_REGISTRY_DOCKERHUB_REPO:aarch64 -t $DOCKER_REGISTRY_QUAY/$DOCKER_REGISTRY_QUAY_REPO:aarch64 .
+    - docker push $DOCKER_REGISTRY/$DOCKER_REGISTRY_REPO:arm64v8
+    - docker push $DOCKER_REGISTRY/$DOCKER_REGISTRY_REPO:aarch64
+    - docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD && docker push $DOCKER_REGISTRY_DOCKERHUB_REPO:arm64v8
+    - docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD && docker push $DOCKER_REGISTRY_DOCKERHUB_REPO:aarch64
+    - docker login quay.io -u $QUAY_USERNAME -p $QUAY_PASSWORD && docker push $DOCKER_REGISTRY_QUAY/$DOCKER_REGISTRY_QUAY_REPO:arm64v8
+    - docker login quay.io -u $QUAY_USERNAME -p $QUAY_PASSWORD && docker push $DOCKER_REGISTRY_QUAY/$DOCKER_REGISTRY_QUAY_REPO:aarch64
+
+
 Github Mirror:
   stage: deploy
   tags:

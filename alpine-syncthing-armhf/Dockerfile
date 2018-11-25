@@ -1,9 +1,9 @@
 FROM yobasystems/alpine:3.8-armhf
-LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="ARM32v7/armhf" version="0.14.49" date="05-aug-2018"
+LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="ARM32v7/armhf" version="0.14.52" date="25-nov-2018"
 
-ENV SYNCTHING_VERSION=0.14.49 \
+ENV SYNCTHING_VERSION=0.14.52 \
     SYNCTHING_USERID=1027 \
-    GOSU_VERSION=1.10 \
+    GOSU_VERSION=1.11 \
     STNOUPGRADE=true
 
 RUN cd /tmp &&\
