@@ -1,7 +1,8 @@
 FROM yobasystems/alpine:3.8-amd64
-LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="AMD64/x86_64" version="0.14.52" date="25-nov-2018"
+LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="AMD64/x86_64"
+LABEL syncthing-version="1.0.1" alpine-version="3.9.0" date="11-Feb-2019"
 
-ENV SYNCTHING_VERSION=0.14.52 \
+ENV SYNCTHING_VERSION=1.0.1 \
     SYNCTHING_USERID=1027 \
     GOSU_VERSION=1.11 \
     STNOUPGRADE=true
