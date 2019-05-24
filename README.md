@@ -1,14 +1,17 @@
 # Syncthing Docker image running on Alpine Linux
 
-[![Docker Layers](https://img.shields.io/badge/docker%20layers-4-blue.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) [![Docker Size](https://img.shields.io/badge/docker%20size-8.14%20MB-blue.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) [![Docker Stars](https://img.shields.io/docker/stars/yobasystems/alpine-syncthing.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) [![Docker Pulls](https://img.shields.io/docker/pulls/yobasystems/alpine-syncthing.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
+[![Docker Automated build](https://img.shields.io/docker/automated/yobasystems/alpine-syncthing.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/yobasystems/alpine-syncthing.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
+[![Docker Stars](https://img.shields.io/docker/stars/yobasystems/alpine-syncthing.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
 
-[![Alpine Version](https://img.shields.io/badge/alpine%20version-v3.9.0-green.svg?maxAge=2592000?style=flat-square)](http://alpinelinux.org/) [![Syncthing Version](https://img.shields.io/badge/syncthing%20version-v1.0.1-green.svg?maxAge=2592000?style=flat-square)](https://syncthing.net/)
+[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.9.4-green.svg?style=for-the-badge)](https://alpinelinux.org/)
+[![Docker Version](https://img.shields.io/badge/Syncthing%20version-v1.1.3-green.svg?style=for-the-badge)](https://www.docker.com/)
 
 
-This Docker image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](http://alpinelinux.org/) with version 1.0.1 of [Syncthing](https://syncthing.net/)
+This Docker image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](https://alpinelinux.org/) with version 1.1.3 of [Syncthing](https://syncthing.net/)
 
-##### Alpine Version 3.9.0 (Released January 29, 2019)
-##### Syncthing Version 1.0.1
+##### Alpine Version 3.9.4 (Released May 09, 2019)
+##### Syncthing Version 1.1.3
 
 ----
 
@@ -21,11 +24,10 @@ Alpine Linux is a Linux distribution built around musl libc and BusyBox. The ima
 
 * Minimal size only 8.16 MB and only 4 layers
 * Memory usage is minimal on a simple install
-* [Syncthing 0.14.49](https://syncthing.net/)
 
 ## Architectures
 
-* ```:amd64```, ```:latest``` - 64 bit Intel/AMD (x86_64/amd64)
+* ```:amd64```, ```:x86_64``` - 64 bit Intel/AMD (x86_64/amd64)
 * ```:arm64v8```, ```:aarch64``` - 64 bit ARM (ARMv8/aarch64)
 * ```:arm32v7```, ```:armhf``` - 32 bit ARM (ARMv7/armhf)
 

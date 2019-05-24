@@ -1,8 +1,24 @@
-FROM yobasystems/alpine:3.8-aarch64
-LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="ARM64v8/aarch64"
-LABEL syncthing-version="1.0.1" alpine-version="3.9.0" date="11-Feb-2019"
+FROM yobasystems/alpine:3.9.4-aarch64
 
-ENV SYNCTHING_VERSION=1.0.1 \
+ARG BUILD_DATE
+ARG VCS_REF
+
+LABEL maintainer="Dominic Taylor <dominic@yobasystems.co.uk>" \
+    architecture="arm64v8/aarch64" \
+    alpine-version="3.9.4" \
+    syncthing-version="1.1.3" \
+    build="24-May-2019" \
+    org.opencontainers.image.title="alpine-syncthing" \
+    org.opencontainers.image.description="Syncthing Docker image running on Alpine Linux" \
+    org.opencontainers.image.authors="Dominic Taylor <dominic@yobasystems.co.uk>" \
+    org.opencontainers.image.vendor="Yoba Systems" \
+    org.opencontainers.image.version="v1.1.3" \
+    org.opencontainers.image.url="https://hub.docker.com/r/yobasystems/alpine-syncthing/" \
+    org.opencontainers.image.source="https://github.com/yobasystems/alpine-syncthing" \
+    org.opencontainers.image.revision=$VCS_REF \
+    org.opencontainers.image.created=$BUILD_DATE
+
+ENV SYNCTHING_VERSION=1.1.3 \
     SYNCTHING_USERID=1027 \
     GOSU_VERSION=1.11 \
     STNOUPGRADE=true

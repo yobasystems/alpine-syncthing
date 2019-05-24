@@ -1,6 +1,11 @@
 stages:
   - build
+  - test
+  - manifest
   - deploy
+
+include:
+  - remote: 'https://gitlab.com/yobasystems/gitlab-ci-templates/raw/master/container_scanning_all_arch.yml'
 
 amd64 syncthing build:
   stage: yobasystems/alpine-docker:dind
@@ -47,22 +52,3 @@ arm64v8 syncthing build:
     - docker login quay.io -u $QUAY_USERNAME -p $QUAY_PASSWORD && docker push $DOCKER_REGISTRY_QUAY/$DOCKER_REGISTRY_QUAY_REPO:arm64v8
     - docker login quay.io -u $QUAY_USERNAME -p $QUAY_PASSWORD && docker push $DOCKER_REGISTRY_QUAY/$DOCKER_REGISTRY_QUAY_REPO:aarch64
 
-Github Mirror:
-  stage: deploy
-  tags:
-    - deploy
-  script:
-    - git push --mirror https://$GITHUB_USERNAME:$GITHUB_PASSWORD@$GITHUB_REPO
-    - git push https://$GITHUB_USERNAME:$GITHUB_PASSWORD@$GITHUB_REPO HEAD:master
-
-Bitbucket Mirror:
-  stage: deploy
-  tags:
-    - deploy
-  script:
-    - mkdir -p ~/.ssh
-    - echo "$BB_SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
-    - chmod 600 ~/.ssh/id_rsa
-    - ssh-keyscan -H 'bitbucket.org' >> ~/.ssh/known_hosts
-    - git push --mirror git@$BITBUCKET_REPO
-    - git push git@$BITBUCKET_REPO HEAD:master
