@@ -27,7 +27,7 @@ RUN cd /tmp &&\
     apk -U add openssl gnupg && \
     echo "Getting GPG keys for gosu and Syncthing" && \
     gpg-agent --daemon && \
-    gpg --quiet --keyserver hkp://keyserver.ubuntu.com:80  --recv-keys 37C84554E7E0A261E4F76E1ED26E6ED000654A3E B42F6819007F00F88E364FD4036A9C25BF357DD4 && \
+    gpg --quiet --keyserver hkps://keys.openpgp.org  --recv-keys 37C84554E7E0A261E4F76E1ED26E6ED000654A3E B42F6819007F00F88E364FD4036A9C25BF357DD4 && \
     echo "Getting gosu and its signature" && \
     wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-arm64.asc && \
     wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-arm64 &&\
