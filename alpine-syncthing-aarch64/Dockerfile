@@ -27,7 +27,7 @@ RUN cd /tmp &&\
     apk -U add openssl gnupg && \
     echo "Getting GPG keys for Syncthing" && \
     gpg-agent --daemon && \
-    gpg --quiet --keyserver hkps://pool.sks-keyservers.net  --recv-keys 49F5AEC0BCE524C7 D26E6ED000654A3E && \
+    gpg --quiet --keyserver hkp://p80.pool.sks-keyservers.net:80  --recv-keys 49F5AEC0BCE524C7 D26E6ED000654A3E && \
     echo "Getting GPG keys for Gosu" && \
     gpg --quiet --keyserver hkp://p80.pool.sks-keyservers.net:80  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && \
     echo "Getting gosu and its signature" && \
