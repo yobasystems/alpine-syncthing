@@ -25,9 +25,11 @@ ENV SYNCTHING_VERSION=1.2.1 \
 
 RUN cd /tmp &&\
     apk -U add openssl gnupg && \
-    echo "Getting GPG keys for gosu and Syncthing" && \
+    echo "Getting GPG keys for Syncthing" && \
     gpg-agent --daemon && \
-    gpg --quiet --keyserver hkps://keys.openpgp.org  --recv-keys 37C84554E7E0A261E4F76E1ED26E6ED000654A3E B42F6819007F00F88E364FD4036A9C25BF357DD4 && \
+    gpg --quiet --keyserver hkps://pool.sks-keyservers.net  --recv-keys 49F5AEC0BCE524C7 D26E6ED000654A3E && \
+    echo "Getting GPG keys for Gosu" && \
+    gpg --quiet --keyserver hkp://p80.pool.sks-keyservers.net:80  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && \
     echo "Getting gosu and its signature" && \
     wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-armhf.asc && \
     wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-armhf &&\
