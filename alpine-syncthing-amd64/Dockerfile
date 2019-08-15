@@ -36,7 +36,7 @@ RUN cd /tmp &&\
     gpg --quiet --keyserver hkp://p80.pool.sks-keyservers.net:80  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && \
     echo "Getting gosu and its signature" && \
     wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64.asc && \
-    wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64 &&\
+    wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64 && \
     echo "Checking gosu signature" && \
     gpg --quiet --verify gosu-amd64.asc && \
     echo "Installing gosu" && \

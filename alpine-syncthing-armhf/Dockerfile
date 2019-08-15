@@ -36,7 +36,7 @@ RUN cd /tmp &&\
     gpg --quiet --keyserver hkp://p80.pool.sks-keyservers.net:80  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && \
     echo "Getting gosu and its signature" && \
     wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-armhf.asc && \
-    wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-armhf &&\
+    wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-armhf && \
     echo "Checking gosu signature" && \
     gpg --quiet --verify gosu-armhf.asc && \
     echo "Installing gosu" && \
