@@ -31,8 +31,8 @@ RUN cd /tmp &&\
     gpg --quiet --keyserver hkps://ha.pool.sks-keyservers.net  --recv-keys 49F5AEC0BCE524C7 D26E6ED000654A3E || \
     gpg --quiet --keyserver hkp://p80.pool.sks-keyservers.net:80  --recv-keys 49F5AEC0BCE524C7 D26E6ED000654A3E && \
     echo "Getting GPG keys for gosu" && \
-    gpg --quiet --keyserver hkps://keyserver.pgp.com  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 ||
-    gpg --quiet --keyserver hkps://ha.pool.sks-keyservers.net  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 ||
+    gpg --quiet --keyserver hkps://keyserver.pgp.com  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 || \
+    gpg --quiet --keyserver hkps://ha.pool.sks-keyservers.net  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 || \
     gpg --quiet --keyserver hkp://p80.pool.sks-keyservers.net:80  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && \
     echo "Getting gosu and its signature" && \
     wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-amd64.asc && \
