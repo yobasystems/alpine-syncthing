@@ -10,7 +10,7 @@
 
 This Docker image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](https://alpinelinux.org/) with version 1.2.1 of [Syncthing](https://syncthing.net/)
 
-##### Alpine Version 3.10.1 (Released May 09, 2019)
+##### Alpine Version 3.10.1 (Released July 11, 2019)
 ##### Syncthing Version 1.2.1
 
 ----
