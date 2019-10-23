@@ -31,15 +31,28 @@ Alpine Linux is a Linux distribution built around musl libc and BusyBox. The ima
 * ```:arm64v8```, ```:aarch64``` - 64 bit ARM (ARMv8/aarch64)
 * ```:arm32v7```, ```:armhf``` - 32 bit ARM (ARMv7/armhf)
 
-#### PLEASE CHECK TAGS BELOW FOR SUPPORTED ARCHITECTURES, THE ABOVE IS A LIST OF EXPLANATION
-
 ## Tags
 
-* ```:latest```, ```:amd64``` latest branch based on amd64
+* ```:latest``` latest branch based (Automatic Architecture Selection)
 * ```:master``` master branch usually inline with latest
-* ```:v0.0.0``` version number related to docker version
-* ```:armhf```, ```:arm32v7``` Armv7 based on latest tag but arm architecture
+* ```:1.3.0```, ```:1.3.0-arch``` version tag (Automatic Architecture Selection)
+* ```:amd64```, ```:x86_64``` amd64 based on latest tag but amd64 architecture
 * ```:aarch64```, ```:arm64v8``` Armv8 based on latest tag but arm64 architecture
+* ```:armhf```, ```:arm32v7``` Armv7 based on latest tag but arm architecture
+
+## Layers & Sizes
+
+![Version](https://img.shields.io/badge/version-amd64-blue.svg?style=for-the-badge)
+![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/yobasystems/alpine-syncthing/amd64.svg?style=for-the-badge)
+![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/yobasystems/alpine-syncthing/amd64.svg?style=for-the-badge)
+
+![Version](https://img.shields.io/badge/version-aarch64-blue.svg?style=for-the-badge)
+![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/yobasystems/alpine-syncthing/aarch64.svg?style=for-the-badge)
+![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/yobasystems/alpine-syncthing/aarch64.svg?style=for-the-badge)
+
+![Version](https://img.shields.io/badge/version-armhf-blue.svg?style=for-the-badge)
+![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/yobasystems/alpine-syncthing/armhf.svg?style=for-the-badge)
+![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/yobasystems/alpine-syncthing/armhf.svg?style=for-the-badge)
 
 ## Creating an instance
 
