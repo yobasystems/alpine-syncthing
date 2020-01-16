@@ -4,14 +4,14 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/yobasystems/alpine-syncthing.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
 [![Docker Stars](https://img.shields.io/docker/stars/yobasystems/alpine-syncthing.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
 
-[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.10.3-green.svg?style=for-the-badge)](https://alpinelinux.org/)
-[![Docker Version](https://img.shields.io/badge/Syncthing%20version-v1.3.0-green.svg?style=for-the-badge)](https://www.docker.com/)
+[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.11.2-green.svg?style=for-the-badge)](https://alpinelinux.org/)
+[![Docker Version](https://img.shields.io/badge/Syncthing%20version-v1.3.3-green.svg?style=for-the-badge)](https://www.docker.com/)
 
 
-This Docker image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](https://alpinelinux.org/) with version 1.3.0 of [Syncthing](https://syncthing.net/)
+This Docker image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](https://alpinelinux.org/) with version 1.3.3 of [Syncthing](https://syncthing.net/)
 
-##### Alpine Version 3.10.3 (Released October 21, 2019)
-##### Syncthing Version 1.3.0
+##### Alpine Version 3.11.2 (Released December 24, 2019)
+##### Syncthing Version 1.3.3
 
 ----
 
@@ -35,7 +35,7 @@ Alpine Linux is a Linux distribution built around musl libc and BusyBox. The ima
 
 * ```:latest``` latest branch based (Automatic Architecture Selection)
 * ```:master``` master branch usually inline with latest
-* ```:1.3.0```, ```:1.3.0-arch``` version tag (Automatic Architecture Selection)
+* ```:1.3.3```, ```:1.3.3-arch``` version tag (Automatic Architecture Selection)
 * ```:amd64```, ```:x86_64``` amd64 based on latest tag but amd64 architecture
 * ```:aarch64```, ```:arm64v8``` Armv8 based on latest tag but arm64 architecture
 * ```:armhf```, ```:arm32v7``` Armv7 based on latest tag but arm architecture
@@ -90,3 +90,13 @@ alpine-syncthing:
 * [Dockerhub - yobasystems](https://hub.docker.com/u/yobasystems/)
 
 * [Quay.io - yobasystems](https://quay.io/organization/yobasystems)
+
+## Donation
+
+```
+BITCOIN: bc1ql0heex0jxh0yj5cucc83a3x6c6rxuq6x9zk07g
+ETHEREUM: 0x6b707391c60d50E4E414a143446C0b8eF9A2d1c4
+STELLAR: GAREZZW36KF2IT2EJW6LG5HH4XT3QIMWCHMCGEBC6V3AP3EFJCORRZIY
+XRP: rsaEp3bh3LrjVHqrcyLgbUb6QUQbBogzR3
+ZCASH: t1MuAY2vR17vDK3BgCAtf8ZdXsCiBw3zkU6
+```
