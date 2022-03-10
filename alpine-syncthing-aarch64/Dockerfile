@@ -24,30 +24,24 @@ ENV SYNCTHING_VERSION=1.19.1 \
     STNOUPGRADE=true
 
 RUN cd /tmp &&\
-    apk -U add openssl gnupg && \
+    apk -U add openssl gnupg curl && \
     echo "Getting GPG keys for Syncthing" && \
     gpg-agent --daemon && \
-    gpg --quiet --keyserver hkps://keys.openpgp.org  --recv-keys 49F5AEC0BCE524C7 D26E6ED000654A3E || \
-    gpg --quiet --keyserver hkps://keyserver.pgp.com  --recv-keys 49F5AEC0BCE524C7 D26E6ED000654A3E || \
-    gpg --quiet --keyserver hkps://ha.pool.sks-keyservers.net  --recv-keys 49F5AEC0BCE524C7 D26E6ED000654A3E || \
-    gpg --quiet --keyserver hkp://p80.pool.sks-keyservers.net:80  --recv-keys 49F5AEC0BCE524C7 D26E6ED000654A3E && \
+    curl -fSL https://syncthing.net/release-key.txt | gpg --import && \
     echo "Getting GPG keys for gosu" && \
-    gpg --quiet --keyserver hkps://keys.openpgp.org  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 || \
-    gpg --quiet --keyserver hkps://keyserver.pgp.com  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 || \
-    gpg --quiet --keyserver hkps://ha.pool.sks-keyservers.net  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 || \
-    gpg --quiet --keyserver hkp://p80.pool.sks-keyservers.net:80  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && \
+    gpg --keyserver hkps://keys.openpgp.org  --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 && \
     echo "Getting gosu and its signature" && \
     wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-arm64.asc && \
     wget -q https://github.com/tianon/gosu/releases/download/${GOSU_VERSION}/gosu-arm64 && \
     echo "Checking gosu signature" && \
-    gpg --quiet --verify gosu-arm64.asc && \
+    gpg --verify gosu-arm64.asc && \
     echo "Installing gosu" && \
     chmod +x gosu-arm64 && mv gosu-arm64 /bin/gosu && \
     echo "Getting Syncthing and its signature" && \
     wget -q https://github.com/syncthing/syncthing/releases/download/v${SYNCTHING_VERSION}/sha1sum.txt.asc && \
     wget -q https://github.com/syncthing/syncthing/releases/download/v${SYNCTHING_VERSION}/syncthing-linux-arm64-v${SYNCTHING_VERSION}.tar.gz && \
     echo "Checking gosu sha1 sum signature" && \
-    gpg --quiet --verify sha1sum.txt.asc && \
+    gpg --verify sha1sum.txt.asc && \
     echo "Checking gosu sha1 checksum" && \
     grep syncthing-linux-arm64-v${SYNCTHING_VERSION}.tar.gz sha1sum.txt.asc | sha1sum -c - && \
     echo "Installing Syncthing" && \
