@@ -13,6 +13,7 @@ stages:
 include:
 - remote: https://gitlab.com/yobasystems/gitlab-ci-templates/raw/master/container_scanning_all_arch.yml
 - template: Security/Secret-Detection.gitlab-ci.yml
+- template: Security/SAST.gitlab-ci.yml
 amd64 syncthing build:
   image: yobasystems/alpine-docker:dind
   stage: build
@@ -267,3 +268,5 @@ dockerhub manifest 1.19.1 creation:
   - docker manifest annotate $DOCKER_REGISTRY_DOCKERHUB_REPO:1.19.1 $DOCKER_REGISTRY_DOCKERHUB_REPO:1.19.1-arm64v8
     --os linux --arch arm64
   - docker manifest push $DOCKER_REGISTRY_DOCKERHUB_REPO:1.19.1
+sast:
+  stage: test
