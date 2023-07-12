@@ -1,24 +1,24 @@
-FROM yobasystems/alpine:3.16.2-amd64
+FROM yobasystems/alpine:3.18.2-amd64
 
 ARG BUILD_DATE
 ARG VCS_REF
 
-LABEL maintainer="Dominic Taylor <dominic@yobasystems.co.uk>" \
+LABEL maintainer="Dominic Taylor <dominic@yoba.systems>" \
     architecture="amd64/x86_64" \
-    alpine-version="3.16.2" \
-    syncthing-version="1.22.1" \
-    build="02-Nov-2022" \
+    alpine-version="3.18.2" \
+    syncthing-version="1.23.6" \
+    build="12-Jul-2023" \
     org.opencontainers.image.title="alpine-syncthing" \
-    org.opencontainers.image.description="Syncthing Docker image running on Alpine Linux" \
-    org.opencontainers.image.authors="Dominic Taylor <dominic@yobasystems.co.uk>" \
+    org.opencontainers.image.description="Syncthing container image running on Alpine Linux" \
+    org.opencontainers.image.authors="Dominic Taylor <dominic@yoba.systems>" \
     org.opencontainers.image.vendor="Yoba Systems" \
-    org.opencontainers.image.version="v1.22.1" \
+    org.opencontainers.image.version="v1.23.6" \
     org.opencontainers.image.url="https://hub.docker.com/r/yobasystems/alpine-syncthing/" \
     org.opencontainers.image.source="https://github.com/yobasystems/alpine-syncthing" \
     org.opencontainers.image.revision=$VCS_REF \
     org.opencontainers.image.created=$BUILD_DATE
 
-ENV SYNCTHING_VERSION=1.22.1 \
+ENV SYNCTHING_VERSION=1.23.6 \
     SYNCTHING_USERID=1027 \
     GOSU_VERSION=1.14 \
     STNOUPGRADE=true
