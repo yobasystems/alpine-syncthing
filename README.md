@@ -45,16 +45,16 @@ Syncthing is a continuous file synchronization program. It synchronizes files be
 ## 📏 Layers & Sizes
 
 ![Version](https://img.shields.io/badge/version-amd64-blue.svg?style=for-the-badge)
-![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/yobasystems/alpine-syncthing/amd64.svg?style=for-the-badge)
-![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/yobasystems/alpine-syncthing/amd64.svg?style=for-the-badge)
+![MicroBadger Layers (tag)](https://img.shields.io/docker/layers/yobasystems/alpine-syncthing/amd64.svg?style=for-the-badge)
+![MicroBadger Size (tag)](https://img.shields.io/docker/image-size/yobasystems/alpine-syncthing/amd64.svg?style=for-the-badge)
 
 ![Version](https://img.shields.io/badge/version-aarch64-blue.svg?style=for-the-badge)
-![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/yobasystems/alpine-syncthing/aarch64.svg?style=for-the-badge)
-![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/yobasystems/alpine-syncthing/aarch64.svg?style=for-the-badge)
+![MicroBadger Layers (tag)](https://img.shields.io/docker/layers/yobasystems/alpine-syncthing/aarch64.svg?style=for-the-badge)
+![MicroBadger Size (tag)](https://img.shields.io/docker/image-size/yobasystems/alpine-syncthing/aarch64.svg?style=for-the-badge)
 
 ![Version](https://img.shields.io/badge/version-armhf-blue.svg?style=for-the-badge)
-![MicroBadger Layers (tag)](https://img.shields.io/microbadger/layers/yobasystems/alpine-syncthing/armhf.svg?style=for-the-badge)
-![MicroBadger Size (tag)](https://img.shields.io/microbadger/image-size/yobasystems/alpine-syncthing/armhf.svg?style=for-the-badge)
+![MicroBadger Layers (tag)](https://img.shields.io/docker/layers/yobasystems/alpine-syncthing/armhf.svg?style=for-the-badge)
+![MicroBadger Size (tag)](https://img.shields.io/docker/image-size/yobasystems/alpine-syncthing/armhf.svg?style=for-the-badge)
 
 
 ## 🚀 How to use this image
