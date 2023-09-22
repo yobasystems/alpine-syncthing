@@ -1,26 +1,26 @@
-FROM yobasystems/alpine:3.18.2-armhf
+FROM yobasystems/alpine:3.18.3-armhf
 
 ARG BUILD_DATE
 ARG VCS_REF
 
 LABEL maintainer="Dominic Taylor <dominic@yoba.systems>" \
     architecture="arm32v7/armhf" \
-    alpine-version="3.18.2" \
-    syncthing-version="1.23.6" \
-    build="12-Jul-2023" \
+    alpine-version="3.18.3" \
+    syncthing-version="1.24.0" \
+    build="22-Sep-2023" \
     org.opencontainers.image.title="alpine-syncthing" \
     org.opencontainers.image.description="Syncthing container image running on Alpine Linux" \
     org.opencontainers.image.authors="Dominic Taylor <dominic@yoba.systems>" \
     org.opencontainers.image.vendor="Yoba Systems" \
-    org.opencontainers.image.version="v1.23.6" \
+    org.opencontainers.image.version="v1.24.0" \
     org.opencontainers.image.url="https://hub.docker.com/r/yobasystems/alpine-syncthing/" \
     org.opencontainers.image.source="https://github.com/yobasystems/alpine-syncthing" \
     org.opencontainers.image.revision=$VCS_REF \
     org.opencontainers.image.created=$BUILD_DATE
 
-ENV SYNCTHING_VERSION=1.23.6 \
+ENV SYNCTHING_VERSION=1.24.0 \
     SYNCTHING_USERID=1027 \
-    GOSU_VERSION=1.14 \
+    GOSU_VERSION=1.16 \
     STNOUPGRADE=true
 
 RUN cd /tmp &&\
