@@ -4,19 +4,19 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/yobasystems/alpine-syncthing.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
 [![Docker Stars](https://img.shields.io/docker/stars/yobasystems/alpine-syncthing.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
 
-[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.18.3-green.svg?style=for-the-badge)](https://alpinelinux.org/)
-[![Docker Version](https://img.shields.io/badge/Syncthing%20version-v1.24.0-green.svg?style=for-the-badge)](https://www.docker.com/)
+[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.18.4-green.svg?style=for-the-badge)](https://alpinelinux.org/)
+[![Docker Version](https://img.shields.io/badge/Syncthing%20version-v1.25.0-green.svg?style=for-the-badge)](https://www.docker.com/)
 
 
-This Docker image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](https://alpinelinux.org/) with version 1.24.0 of [Syncthing](https://syncthing.net/)
+This container image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](https://alpinelinux.org/) with version 1.25.0 of [Syncthing](https://syncthing.net/)
 
-### Alpine Version 3.18.3 (Released 2023-08-07)
-##### Syncthing Version 1.24.0
+### Alpine Version 3.18.4 (Released 2023-09-28)
+##### Syncthing Version 1.25.0
 
 ----
 
 ## 🏔️ What is Alpine Linux?
-Alpine Linux is a Linux distribution built around musl libc and BusyBox. The image is only 5 MB in size and has access to a package repository that is much more complete than other BusyBox based images. This makes Alpine Linux a great image base for utilities and even production applications. Read more about Alpine Linux here and you can see how their mantra fits in right at home with Docker images.
+Alpine Linux is a Linux distribution built around musl libc and BusyBox. The image is only 5 MB in size and has access to a package repository that is much more complete than other BusyBox based images. This makes Alpine Linux a great image base for utilities and even production applications. Read more about Alpine Linux here and you can see how their mantra fits in right at home with container images.
 
 ##  What is Syncthing?
 Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes. Your data is your data alone and you deserve to choose where it is stored, whether it is shared with some third party, and how it's transmitted over the internet.
