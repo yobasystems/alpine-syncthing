@@ -1,25 +1,25 @@
-FROM yobasystems/alpine:3.19.3-amd64
+FROM yobasystems/alpine:3.20.2-amd64
 
 ARG BUILD_DATE
 ARG VCS_REF
 
 LABEL maintainer="Dominic Taylor <dominic@yoba.systems>" \
     architecture="amd64/x86_64" \
-    alpine-version="3.19.3" \
-    syncthing-version="1.27.8" \
+    alpine-version="3.20.2" \
+    syncthing-version="1.27.10" \
     build="19-Aug-2024" \
     org.opencontainers.image.title="alpine-syncthing" \
     org.opencontainers.image.description="Syncthing container image running on Alpine Linux" \
     org.opencontainers.image.authors="Dominic Taylor <dominic@yoba.systems>" \
     org.opencontainers.image.vendor="Yoba Systems" \
-    org.opencontainers.image.version="1.27.8" \
+    org.opencontainers.image.version="1.27.10" \
     org.opencontainers.image.url="https://hub.docker.com/r/yobasystems/alpine-syncthing/" \
     org.opencontainers.image.source="https://github.com/yobasystems/alpine-syncthing" \
-    org.opencontainers.image.base.name="docker.io/yobasystems/alpine:3.19.3" \
+    org.opencontainers.image.base.name="docker.io/yobasystems/alpine:3.20.2" \
     org.opencontainers.image.revision=$VCS_REF \
     org.opencontainers.image.created=$BUILD_DATE
 
-ENV SYNCTHING_VERSION=1.27.8 \
+ENV SYNCTHING_VERSION=1.27.10 \
     SYNCTHING_USERID=1027 \
     GOSU_VERSION=1.17 \
     STNOUPGRADE=true
