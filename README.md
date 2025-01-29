@@ -36,7 +36,7 @@ Syncthing is a continuous file synchronization program. It synchronizes files be
 ## 🏷️ Tags
 
 * ```:latest``` latest branch based (Automatic Architecture Selection)
-* ```:master``` master branch usually inline with latest
+* ```:main``` main branch usually inline with latest
 * ```:x.y.z```, ```:x.y.z-arch``` version tag (Automatic Architecture Selection)
 * ```:amd64```, ```:x86_64``` amd64 based on latest tag but amd64 architecture
 * ```:aarch64```, ```:arm64v8``` Armv8 based on latest tag but arm64 architecture
