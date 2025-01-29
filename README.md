@@ -4,14 +4,14 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/yobasystems/alpine-syncthing.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
 [![Docker Stars](https://img.shields.io/docker/stars/yobasystems/alpine-syncthing.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
 
-[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.20.2-green.svg?style=for-the-badge)](https://alpinelinux.org/)
-[![Docker Version](https://img.shields.io/badge/Syncthing%20version-v1.27.10-green.svg?style=for-the-badge)](https://www.docker.com/)
+[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.21.1-green.svg?style=for-the-badge)](https://alpinelinux.org/)
+[![Docker Version](https://img.shields.io/badge/Syncthing%20version-v1.29.2-green.svg?style=for-the-badge)](https://www.docker.com/)
 
 
-This container image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](https://alpinelinux.org/) with version 1.27.10 of [Syncthing](https://syncthing.net/)
+This container image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](https://alpinelinux.org/) with version 1.29.2 of [Syncthing](https://syncthing.net/)
 
-### Alpine Version 3.20.2 (Released 2024-07-22)
-##### Syncthing Version 1.27.10
+### Alpine Version 3.21.1 (Released 2025-01-06)
+##### Syncthing Version 1.29.2
 
 ----
 
@@ -94,29 +94,24 @@ alpine-syncthing:
 ## 📚 Source Repositories
 
 * [Github - yobasystems/alpine-syncthing](https://github.com/yobasystems/alpine-syncthing)
-
 * [Gitlab - yobasystems/alpine-syncthing](https://gitlab.com/yobasystems/alpine-syncthing)
-
 * [Bitbucket - yobasystems/alpine-syncthing](https://bitbucket.org/yobasystems/alpine-syncthing/)
 
 
 ## 🐳 Container Registries
 
 * [Dockerhub - yobasystems/alpine-syncthing](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
-
 * [Quay.io - yobasystems/alpine-syncthing](https://quay.io/repository/yobasystems/alpine-syncthing)
+* [GHCR - yobasystems/alpine-syncthing](https://ghcr.io/yobasystems/alpine-syncthing)
 
 
 ## 🔗 Links
 
-* [Yoba Systems](https://www.yobasystems.co.uk/)
-
+* [Yoba Systems](https://yoba.systems/)
 * [Github - Yoba Systems](https://github.com/yobasystems/)
-
 * [Dockerhub - Yoba Systems](https://hub.docker.com/u/yobasystems/)
-
 * [Quay.io - Yoba Systems](https://quay.io/organization/yobasystems)
-
+* [GHCR - Yoba Systems](https://ghcr.io/yobasystems)
 * [Maintainer - Dominic Taylor](https://github.com/dominictayloruk)
 
 ## 💰 Donation
