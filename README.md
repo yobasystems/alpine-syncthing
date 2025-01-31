@@ -4,13 +4,13 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/yobasystems/alpine-syncthing.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
 [![Docker Stars](https://img.shields.io/docker/stars/yobasystems/alpine-syncthing.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
 
-[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.21.1-green.svg?style=for-the-badge)](https://alpinelinux.org/)
+[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.21.2-green.svg?style=for-the-badge)](https://alpinelinux.org/)
 [![Docker Version](https://img.shields.io/badge/Syncthing%20version-v1.29.2-green.svg?style=for-the-badge)](https://www.docker.com/)
 
 
 This container image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](https://alpinelinux.org/) with version 1.29.2 of [Syncthing](https://syncthing.net/)
 
-### Alpine Version 3.21.1 (Released 2025-01-06)
+### Alpine Version 3.21.2 (Released 2025-01-06)
 ##### Syncthing Version 1.29.2
 
 ----
