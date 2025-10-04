@@ -5,13 +5,13 @@
 [![Docker Stars](https://img.shields.io/docker/stars/yobasystems/alpine-syncthing.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/yobasystems/alpine-syncthing/)
 
 [![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.22.1-green.svg?style=for-the-badge)](https://alpinelinux.org/)
-[![Docker Version](https://img.shields.io/badge/Syncthing%20version-v1.30.0-green.svg?style=for-the-badge)](https://www.docker.com/)
+[![Docker Version](https://img.shields.io/badge/Syncthing%20version-v2.0.10-green.svg?style=for-the-badge)](https://www.docker.com/)
 
 
-This container image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](https://alpinelinux.org/) with version 1.30.0 of [Syncthing](https://syncthing.net/)
+This container image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/yobasystems/alpine-syncthing/) is based on the minimal [Alpine Linux](https://alpinelinux.org/) with version 2.0.10 of [Syncthing](https://syncthing.net/)
 
 ### Alpine Version 3.22.1 (Released 2025-07-15)
-##### Syncthing Version 1.30.0
+##### Syncthing Version 2.0.10
 
 ----
 
@@ -45,15 +45,12 @@ Syncthing is a continuous file synchronization program. It synchronizes files be
 ## 📏 Layers & Sizes
 
 ![Version](https://img.shields.io/badge/version-amd64-blue.svg?style=for-the-badge)
-![Docker Image Version (tag)](https://img.shields.io/docker/v/yobasystems/alpine-syncthing/amd64.svg?style=for-the-badge)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/yobasystems/alpine-syncthing/amd64.svg?style=for-the-badge)
 
 ![Version](https://img.shields.io/badge/version-aarch64-blue.svg?style=for-the-badge)
-![Docker Image Version (tag)](https://img.shields.io/docker/v/yobasystems/alpine-syncthing/aarch64.svg?style=for-the-badge)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/yobasystems/alpine-syncthing/aarch64.svg?style=for-the-badge)
 
 ![Version](https://img.shields.io/badge/version-armhf-blue.svg?style=for-the-badge)
-![Docker Image Version (tag)](https://img.shields.io/docker/v/yobasystems/alpine-syncthing/armhf.svg?style=for-the-badge)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/yobasystems/alpine-syncthing/armhf.svg?style=for-the-badge)
 
 
@@ -95,7 +92,6 @@ alpine-syncthing:
 
 * [Github - yobasystems/alpine-syncthing](https://github.com/yobasystems/alpine-syncthing)
 * [Gitlab - yobasystems/alpine-syncthing](https://gitlab.com/yobasystems/alpine-syncthing)
-* [Bitbucket - yobasystems/alpine-syncthing](https://bitbucket.org/yobasystems/alpine-syncthing/)
 
 
 ## 🐳 Container Registries

@@ -6,20 +6,20 @@ ARG VCS_REF
 LABEL maintainer="Dominic Taylor <dominic@yoba.systems>" \
     architecture="amd64/x86_64" \
     alpine-version="3.22.1" \
-    syncthing-version="1.30.0" \
-    build="03-Aug-2025" \
+    syncthing-version="2.0.10" \
+    build="04-Oct-2025" \
     org.opencontainers.image.title="alpine-syncthing" \
     org.opencontainers.image.description="Syncthing container image running on Alpine Linux" \
     org.opencontainers.image.authors="Dominic Taylor <dominic@yoba.systems>" \
     org.opencontainers.image.vendor="Yoba Systems" \
-    org.opencontainers.image.version="1.30.0" \
+    org.opencontainers.image.version="2.0.10" \
     org.opencontainers.image.url="https://hub.docker.com/r/yobasystems/alpine-syncthing/" \
     org.opencontainers.image.source="https://github.com/yobasystems/alpine-syncthing" \
     org.opencontainers.image.base.name="docker.io/yobasystems/alpine:3.22.1" \
     org.opencontainers.image.revision=$VCS_REF \
     org.opencontainers.image.created=$BUILD_DATE
 
-ENV SYNCTHING_VERSION=1.30.0 \
+ENV SYNCTHING_VERSION=2.0.10 \
     SYNCTHING_USERID=1027 \
     GOSU_VERSION=1.17 \
     STNOUPGRADE=true
