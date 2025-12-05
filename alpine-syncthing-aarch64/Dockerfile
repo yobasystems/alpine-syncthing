@@ -1,13 +1,13 @@
-FROM yobasystems/alpine:3.22.2-aarch64
+FROM yobasystems/alpine:3.23.0-aarch64
 
 ARG BUILD_DATE
 ARG VCS_REF
 
 LABEL maintainer="Dominic Taylor <dominic@yoba.systems>" \
     architecture="arm64v8/aarch64" \
-    alpine-version="3.22.2" \
+    alpine-version="3.23.0" \
     syncthing-version="2.0.11" \
-    build="30-Nov-2025" \
+    build="04-Dec-2025" \
     org.opencontainers.image.title="alpine-syncthing" \
     org.opencontainers.image.description="Syncthing container image running on Alpine Linux" \
     org.opencontainers.image.authors="Dominic Taylor <dominic@yoba.systems>" \
@@ -15,7 +15,7 @@ LABEL maintainer="Dominic Taylor <dominic@yoba.systems>" \
     org.opencontainers.image.version="2.0.11" \
     org.opencontainers.image.url="https://hub.docker.com/r/yobasystems/alpine-syncthing/" \
     org.opencontainers.image.source="https://github.com/yobasystems/alpine-syncthing" \
-    org.opencontainers.image.base.name="docker.io/yobasystems/alpine:3.22.1" \
+    org.opencontainers.image.base.name="docker.io/yobasystems/alpine:3.23.0" \
     org.opencontainers.image.revision=$VCS_REF \
     org.opencontainers.image.created=$BUILD_DATE
 
