@@ -15,6 +15,19 @@ This container image [(yobasystems/alpine-syncthing)](https://hub.docker.com/r/y
 
 ---
 
+## Table of Contents
+
+- [What is Alpine Linux?](#what-is-alpine-linux)
+- [Features](#features)
+- [Architectures](#architectures)
+- [Tags](#tags)
+- [Layers & Sizes](#layers--sizes)
+- [How to use this image](#how-to-use-this-image)
+- [Image contents & Vulnerability analysis](#image-contents--vulnerability-analysis)
+- [Source Repositories](#source-repositories)
+- [Container Registries](#container-registries)
+- [Links](#links)
+
 ## 🏔️ What is Alpine Linux?
 
 Alpine Linux is a Linux distribution built around musl libc and BusyBox. The image is only 5 MB in size and has access to a package repository that is much more complete than other BusyBox based images. This makes Alpine Linux a great image base for utilities and even production applications. Read more about Alpine Linux here and you can see how their mantra fits in right at home with container images.
